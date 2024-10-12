@@ -41,7 +41,7 @@ under the License.
     <java.version>11</java.version>
     <maven.compiler.source>${java.version}</maven.compiler.source>
     <maven.compiler.target>${java.version}</maven.compiler.target>
-    <scala.version>2.12.17</scala.version>
+    <scala.version>2.13.15</scala.version>
     <scala.binary.version>2.12</scala.binary.version>
     <scala.plugin.version>4.7.2</scala.plugin.version>
     <scalatest.version>3.2.9</scalatest.version>
@@ -488,7 +488,7 @@ under the License.
     <profile>
       <id>spark-3.2</id>
       <properties>
-        <scala.version>2.12.15</scala.version>
+        <scala.version>2.13.15</scala.version>
         <spark.version>3.2.2</spark.version>
         <spark.version.short>3.2</spark.version.short>
         <parquet.version>1.12.0</parquet.version>
@@ -501,7 +501,7 @@ under the License.
     <profile>
       <id>spark-3.3</id>
       <properties>
-        <scala.version>2.12.15</scala.version>
+        <scala.version>2.13.15</scala.version>
         <spark.version>3.3.2</spark.version>
         <spark.version.short>3.3</spark.version.short>
         <parquet.version>1.12.0</parquet.version>
@@ -514,7 +514,7 @@ under the License.
     <profile>
       <id>spark-3.4</id>
       <properties>
-        <scala.version>2.12.17</scala.version>
+        <scala.version>2.13.15</scala.version>
         <spark.version.short>3.4</spark.version.short>
         <parquet.version>1.13.1</parquet.version>
         <java.version>11</java.version>
@@ -526,7 +526,7 @@ under the License.
     <profile>
       <id>scala-2.13</id>
       <properties>
-        <scala.version>2.13.8</scala.version>
+        <scala.version>2.13.15</scala.version>
         <scala.binary.version>2.13</scala.binary.version>
       </properties>
     </profile>
@@ -608,7 +608,7 @@ under the License.
             </execution>
           </executions>
           <configuration>
-            -->
+            --&gt;
             <scalaVersion>${scala.version}</scalaVersion>
             <checkMultipleScalaVersions>true</checkMultipleScalaVersions>
             <failOnMultipleScalaVersions>true</failOnMultipleScalaVersions>
@@ -716,15 +716,15 @@ under the License.
           <version>${spotless.version}</version>
           <configuration>
             <java>
-              <toggleOffOn />
-              <googleJavaFormat />
-              <removeUnusedImports />
+              <toggleOffOn/>
+              <googleJavaFormat/>
+              <removeUnusedImports/>
               <importOrder>
                 <order>java|javax,scala,org,org.apache,com,org.apache.comet,\#,\#org.apache.comet</order>
               </importOrder>
             </java>
             <scala>
-              <toggleOffOn />
+              <toggleOffOn/>
               <scalafmt>
                 <version>3.6.1</version>
                 <file>${maven.multiModuleProjectDirectory}/scalafmt.conf</file>
